@@ -21,14 +21,14 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-h2 {
+h3 {
     font-size: 1.5rem
 }
 p {
     font-family: 'Roboto',sans-serif;
     font-size: 1.2rem;
     color: var(--secondry-text-color);
-    line-height: 1.8rem;
+    line-height: 1.4rem;
 }
 a {
     text-decoration: none;
@@ -166,4 +166,38 @@ header {
     gap: 20px;
     max-width: 30%;
     text-align: center;
+}
+/* big features section */
+.big-feature-section {
+    margin: 30px var(--padding-inline-section) 0;
+}
+.big-feature-container {
+    gap: 30px;
+}
+.feature-img img {
+    width: 100%;
+}
+.feature-description {
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* example section */
+.examples-header {
+    flex-direction: column;
+    gap: 20px;
+}
+.example-card {
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient( rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./assets/asset\ 35.jpeg);
+
+}
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
 }
