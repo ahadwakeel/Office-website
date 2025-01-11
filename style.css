@@ -46,6 +46,7 @@ ul {
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 .flex {
     display: flex;
@@ -66,6 +67,7 @@ ul {
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondry-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 }
 .primary-button:hover {
     background-color: var(--accent-color-dark);
@@ -109,6 +111,9 @@ ul {
     justify-content: end;
     column-gap: 40px;
 }
+.nav-toggle {
+    display: none;
+}
 /* header */
 header {
     padding: 50px var(--padding-inline-section) 0;
@@ -127,7 +132,7 @@ header {
     margin-top: 20px;
 }
 .header-section img {
-    width: 600px;
+    width: 100%;
 }
 /* Companies Section */
 .companies-header {
@@ -137,7 +142,9 @@ header {
     color: var(--primary-text-color);
 }
 .logos {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .logo {
     width: 110px;
@@ -151,6 +158,7 @@ header {
 }
 .features-header {
     text-align: center;
+    margin-bottom: 40px;
 }
 .features-heading-text {
     margin-bottom: 20px;
@@ -177,6 +185,9 @@ header {
 .big-feature-container {
     gap: 30px;
 }
+#second-big-feature {
+    flex-direction: row-reverse;
+}
 .feature-img img {
     width: 100%;
 }
@@ -185,18 +196,23 @@ header {
     align-items: flex-start;
 }
 /* example section */
+.example-section {
+    padding: 80px var(--padding-inline-section);
+}
 .examples-header {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 .example-area {
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap: wrap;
 }
 .example-card {
     width: 23%;
     position: relative;
-    min-height: 300px;
+    height: 300px;
     background: black;
     transition: 0.2s ease-out;
 }
@@ -227,6 +243,7 @@ header {
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 .cta-section {
     padding: 120px var(--padding-inline-section) 80px;
@@ -258,4 +275,5 @@ footer {
 .subfooter-container {
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
